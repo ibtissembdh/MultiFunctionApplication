@@ -21,12 +21,19 @@ public class MainActivity2 extends AppCompatActivity {
         btn4 = this.findViewById(R.id.btn4);
 
         btn1.setOnClickListener(v->SMS_Function());
+        btn2.setOnClickListener(v-> call_Function());
 
     }
     public void SMS_Function(){
         Uri uri = Uri.parse("sms:you are the best");
         Intent intent= new Intent(Intent.ACTION_VIEW, uri);
         intent.putExtra("sms_body","message");
+        startActivity(intent);
+    }
+
+    public void call_Function(){
+        Uri uri = Uri.parse("tel:0540555555");
+        Intent intent= new Intent(Intent.ACTION_DIAL,uri);
         startActivity(intent);
     }
 }
