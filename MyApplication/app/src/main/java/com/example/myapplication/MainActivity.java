@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         if (p.equals("admin") && u.equals("Admin")) {
             Intent intent = new Intent(this, MainActivity2.class);
             startActivity(intent);
-            Toast.makeText(this, "Welcome Admin", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Welcome"+ u, Toast.LENGTH_SHORT).show();
 
         }else if (p.isEmpty() || u.isEmpty()){
             Toast.makeText(this,"Empty field", Toast.LENGTH_SHORT).show();

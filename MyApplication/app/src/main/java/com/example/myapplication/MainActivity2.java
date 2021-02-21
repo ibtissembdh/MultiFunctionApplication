@@ -23,11 +23,11 @@ public class MainActivity2 extends AppCompatActivity {
         btn1.setOnClickListener(v->SMS_Function());
         btn2.setOnClickListener(v-> call_Function());
         btn3.setOnClickListener(v -> google_Function());
-        btn1.setOnClickListener(v->GoBack_Function());
+        btn4.setOnClickListener(v->GoBack_Function());
 
     }
     public void SMS_Function(){
-        Uri uri = Uri.parse("sms:you are the best");
+        Uri uri = Uri.parse("sms:0774982908");
         Intent intent= new Intent(Intent.ACTION_VIEW, uri);
         intent.putExtra("sms_body","message");
         startActivity(intent);
@@ -40,7 +40,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
     public void google_Function(){
 
-        Uri uri = Uri.parse("http://www.google.fr/");
+        Uri uri = Uri.parse("http://www.google.com");
         Intent intent= new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 

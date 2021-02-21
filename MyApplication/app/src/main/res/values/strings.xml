@@ -6,4 +6,8 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="connecter">connecter</string>
     <string name="quitter">Quitter</string>
+    <string name="send_sms">send SMS</string>
+    <string name="do_a_call">Do a call</string>
+    <string name="visit_google">visit google</string>
+    <string name="go_back">go back</string>
 </resources>

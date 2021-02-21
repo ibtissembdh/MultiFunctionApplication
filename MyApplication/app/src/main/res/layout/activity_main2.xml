@@ -12,25 +12,25 @@
         android:layout_height="wrap_content"
         android:padding="25dp"
         android:id="@+id/btn1"
-        android:text="send SMS" />
+        android:text="@string/send_sms" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="25dp"
         android:id="@+id/btn2"
-        android:text="Do a call" />
+        android:text="@string/do_a_call" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="25dp"
         android:id="@+id/btn3"
-        android:text="visit google" />
+        android:text="@string/visit_google" />
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="25dp"
-        android:text="go back" />
+        android:text="@string/go_back" />
 
 </LinearLayout>
