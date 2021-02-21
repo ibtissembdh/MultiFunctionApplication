@@ -22,6 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         btn1.setOnClickListener(v->SMS_Function());
         btn2.setOnClickListener(v-> call_Function());
+        btn3.setOnClickListener(v -> google_Function());
 
     }
     public void SMS_Function(){
@@ -35,5 +36,12 @@ public class MainActivity2 extends AppCompatActivity {
         Uri uri = Uri.parse("tel:0540555555");
         Intent intent= new Intent(Intent.ACTION_DIAL,uri);
         startActivity(intent);
+    }
+    public void google_Function(){
+
+        Uri uri = Uri.parse("http://www.google.fr/");
+        Intent intent= new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+
     }
 }
