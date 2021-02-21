@@ -27,7 +27,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
     public void SMS_Function(){
-        Uri uri = Uri.parse("sms:0774982908");
+        Uri uri = Uri.parse("sms:0774900829");
         Intent intent= new Intent(Intent.ACTION_VIEW, uri);
         intent.putExtra("sms_body","message");
         startActivity(intent);
